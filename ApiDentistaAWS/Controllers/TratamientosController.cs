@@ -24,9 +24,10 @@ namespace ApiEmpleadosOAuth.Controllers
             this.repo = repo;
         }
 
-        [Authorize]
+        //[Authorize]
         [HttpGet]
-        public ActionResult<List<Tratamiento>> GetEmpleados()
+        [Route("[action]")]
+        public ActionResult<List<Tratamiento>> GetTratamientos()
         {
             return this.repo.GetTratamientos();
         }

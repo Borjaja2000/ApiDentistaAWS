@@ -18,6 +18,7 @@ namespace ApiDentistaAWS.Repositories
         public List<Tratamiento> GetTratamientos()
         {
             return this.context.Tratamientos.ToList();
+
         }
 
         public Tratamiento BuscarTratamiento(int idtratamiento)

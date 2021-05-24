@@ -26,6 +26,7 @@ namespace ApiEmpleadosAWS.Controllers
 
         [Authorize]
         [HttpGet]
+        [Route("[action]")]
         public ActionResult<List<Cliente>> GetClientes()
         {
             return this.repo.GetClientes();
